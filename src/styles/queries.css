@@ -1,0 +1,48 @@
+/* QUERIES */
+
+@media (max-width: 1080px) {
+  .container_oferta {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_oferta h2 {
+    text-align: center;
+  }
+  .oferta_experiencia {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .container_general_oferta {
+    width: 90vw;
+    margin: auto;
+  }
+  .container_oferta_ind h1 {
+    font-size: 25px;
+  }
+
+  .cuerpo_oferta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .columna_izq_oferta {
+    width: 100%;
+    list-style: none;
+  }
+  .columna_der_oferta {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .autores ul {
+    margin-bottom: 20px;
+  }
+}

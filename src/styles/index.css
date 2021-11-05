@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@700&display=swap");
+.theme-dark {
+  --background-color: #3d4443;
+  --accent-color: #61cad0;
+  --light-color: #4b5c5b;
+  --mid-color: #648e8a;
+  --dark-color: #d3d3d3;
+}
+
+.theme-light {
+  --background-color: #fff;
+  --accent-color: #3eafb5;
+  --light-color: #e6eded;
+  --mid-color: #c5dedc;
+  --dark-color: #004852;
+}
+
+/* GENERAL */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark-color);
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+/* BOTONES */
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cuelga_oferta {
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--dark-color);
+  background-color: transparent;
+}
+.cuelga_oferta:hover {
+  color: var(--accent-color);
+}
+
+.show_more {
+  align-items: center;
+  justify-self: end;
+}
+.show_more button {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: var(--background-color);
+  font-weight: 600;
+  font-size: 15px;
+}
+.show_more button:hover {
+  background-color: var(--dark-color);
+}
+
+/* CONTAINERS */
+.container-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+.container-main-content {
+  flex: 1 1 auto;
+}
+
+.container_general {
+  max-width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+
+.container_oferta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  background-color: var(--light-color);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border-left: 5px solid var(--accent-color);
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  list-style: none;
+}
+.oferta_experiencia_container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.oferta_experiencia {
+  width: 40%;
+  background-color: var(--mid-color);
+  text-align: center;
+  border-radius: 10px;
+}

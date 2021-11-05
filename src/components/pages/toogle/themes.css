@@ -1,0 +1,15 @@
+.theme-dark {
+  --background-color: #3d4443;
+  --accent-color: #61cad0;
+  --light-color: #4b5c5b;
+  --mid-color: #648e8a;
+  --dark-color: #d3d3d3;
+}
+
+.theme-light {
+  --background-color: #fff;
+  --accent-color: #3eafb5;
+  --light-color: #e6eded;
+  --mid-color: #c5dedc;
+  --dark-color: #004852;
+}

@@ -1,0 +1,33 @@
+/* SEARCH */
+
+.search-nav {
+  width: fit-content;
+  margin: auto;
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  color: var(--accent-color);
+}
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.search-bar input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border: none;
+}

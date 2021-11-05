@@ -1,0 +1,93 @@
+:root {
+  /** light **/
+  --background-color: #fff;
+  --accent-color: #3eafb5;
+  --light-color: #e6eded;
+  --mid-color: #c5dedc;
+  --dark-color: #004852;
+  /** dark **/
+  --background-color: #3d4443;
+  --accent-color: #61cad0;
+  --light-color: #4b5c5b;
+  --mid-color: #648e8a;
+  --dark-color: #d3d3d3;
+}
+
+@keyframes reverse {
+  0% {
+    left: 47px;
+    width: 20px;
+  }
+  60% {
+    left: 5px;
+    width: 35px;
+  }
+  100% {
+    left: 5px;
+  }
+}
+
+@keyframes switch {
+  0% {
+    left: 4px;
+  }
+  60% {
+    left: 4px;
+    width: 50px;
+  }
+  100% {
+    left: 35px;
+    width: 20px;
+  }
+}
+
+.toggle--checkbox {
+  display: none;
+}
+
+.container--toggle {
+  display: grid;
+  place-items: center;
+  height: 60px;
+  position: relative;
+  grid-area: toggle;
+}
+
+/* background */
+.toggle--label {
+  width: 60px;
+  height: 30px;
+  background: var(--accent-color);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  transition: all 350ms ease-in;
+}
+
+.toggle--checkbox:checked + .toggle--label {
+  background: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.toggle--checkbox:checked + .toggle--label:before {
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  transition: all 360ms ease-in;
+  background: var(--background-color);
+  border-color: var(--accent-color);
+}
+
+.toggle--label:before {
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 10px solid var(--gray-border);
+  top: 4px;
+  position: absolute;
+  border-radius: 40px;
+  background: var(--background-color);
+}

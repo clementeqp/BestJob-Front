@@ -1,0 +1,16 @@
+/* NAVEGACION */
+
+nav {
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+nav img {
+  height: 5vh;
+}
+.color-toogle {
+  flex-grow: 1;
+}
